@@ -1,0 +1,64 @@
+body {
+  min-width: 400px;
+  background-color: rgb(10 16 20) !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 50% !important;
+  }
+}
+.home h4 {
+  text-align: center;
+  margin-bottom: 3rem;
+  background-color: rgb(66 203 165);
+  color: white;
+  padding: 1rem;
+  border-radius: 3px;
+}
+.home {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 50px;
+  margin-top: 10rem;
+  border-radius: 20px;
+  background-color: rgb(34 46 53);
+  color: white;
+  animation: show 250ms ease-in-out forwards;
+}
+.home a {
+  padding: 10px 20px;
+  background-color: rgb(66 203 165);
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+  user-select: none;
+  font-weight: 600;
+}
+.home a:hover {
+  color: white;
+}
+
+.home a:active {
+  transform: scale(1.05);
+  transition: all 50ms ease-in-out;
+}
+textarea,
+input {
+  background-color: rgba(0, 0, 0, 0.26) !important;
+  color: white !important;
+  border-color: rgb(66 203 165) !important;
+}
+textarea:focus,
+input:focus {
+  box-shadow: none !important;
+}
+@keyframes show {
+  to {
+    transform: scale(1);
+  }
+  from {
+    transform: scale(0.9);
+  }
+}
